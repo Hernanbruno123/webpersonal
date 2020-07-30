@@ -22,7 +22,7 @@ $(".cambiaremail").click((lev) => {
     formAcad.orderByChild('academia').equalTo(texto).once('value', function (snapshot) {
     var formacion = snapshot.val()
     cadena = ""
-    for (var i in formacion) {
+    for (var i in formacion) { 
         var elem = formacion[i]
         cadena += "<li>  academia : " + elem.academia
         cadena += "duration: " + elem.desde + "_" + elem.hasta
